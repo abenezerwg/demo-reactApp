@@ -8,6 +8,13 @@ export const Dashboard = () => {
     const [selectedPost, setSelectedPost] = useState(null);
     const [title, setTitle] = useState('Title: ');
 
+   // Lab 6, Comment out the following code
+    // const [posts, setPosts] = useState([
+    //     { id:'ID'+111, title: 'Happiness', author: 'John' },
+    //     { id:'ID'+112, title: 'MIU', author: 'Dean' },
+    //     { id:'ID'+113, title: 'Enjoy Life', author: 'Jasmine' },
+    // ]);
+
     useEffect(() => {
         fetchPosts();
     }, []);
